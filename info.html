@@ -8,76 +8,779 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    <link href="CSS/style_vademecum.css" rel="stylesheet">
+    <link href="CSS/style_info.css" rel="stylesheet">
 </head>
 
 <body>
 
 
 
-    <nav class="navbar bg-body-tertiary sticky-top">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand museo700 white-text" href="../0_SITO/0_home.html">VADEMECUM</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <a class="navbar-brand museo700" href="index.html">VADEMECUM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="museo700 white-text" id="offcanvasNavbarLabel">Benvenuto!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title museo700" id="offcanvasDarkNavbarLabel">Come posso aiutarti?</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    
-                            <div class="container-fluid text-center d-flex">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+
+                        <li class="nav-item contado">
+                            <a class="nav-link museo700 titolo" href="contado.html">Contado di Bormio</a>
+                        </li>
+
+                        <li class="nav-item arte">
+                            <a class="nav-link  museo700" href="arte.html">Arte &
+                                Cultura</a>
+                        </li>
+
+                        <li class="nav-item sport">
+                            <a class="nav-link  museo700" href="sport.html">Sport &
+                                Divertimento</a>
+                        </li>
+
+                        <li class="nav-item wellness">
+                            <a class="nav-link  museo700" href="wellness.html">Wellness & Shopping</a>
+                        </li>
+
+                        <li class="nav-item mangiare">
+                            <a class="nav-link  museo700" href="/mangiare.html">Mangiare & Bere</a>
+                        </li>
+
+                        <li class="nav-item info">
+                            <a class="nav-link active museo700" aria-current="page" href="mangiare.html">Info
+                                utili</a>
+                        </li>
 
 
-                                <div class="row row-cols-2">
-                                    <div class="col contado">
-                                      <p class="text-white">Contado di Bormio</p>
-                                    </div>
-                                    <div class="col arte">
-                                        <p class="text-white">Arte & cultura</p>
-                                    </div>
-                                  
-                        
-                                 
-                                    <div class="col sport">
-                                      <p class="text-white">Sport & divertimento</p>
-                                    </div>
-                                    <div class="col wellness">
-                                        <p class="text-white">Wellness & shopping</p>
-                                    </div>
-                                 
-                        
-                                    <div class="col mangiare">
-                                      <p class="text-white">Mangiare & bere</p>
-                                    </div>
-                                    <div class="col info">
-                                        <p class="text-white">Info utili</p>
-                                    
-                                  </div>
-                        
-                        
-                        
-                            </div>
-                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Select language
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="info.html">Italiano</a></li>
 
-                    </form>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="info_eng.html">English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </div>
     </nav>
 
 
-    <p>INFO</p>
+    <p class="fs-2 text-white museo700 titolo">Info Utili</p>
+
+    <div class="container-fluid">
+        <div class="d-grid gap-2">
+
+            <a role="button" class="btn btn-primary shadow text-start" href="info_emergenze.html">Emergenze</a>
+            <a role="button" class="btn btn-primary shadow text-start" href="info_medici.html">Medici / Farmacie</a>
+
+        </div>
+    </div>
+
+    <!--UFFICI TURISTICI-->
+    <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Info Point</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Bormio</th>
+                            <td>Bormio, via Roma 131/B</td>
+                            <td>0342903300</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Valdidentro</th>
+                            <td>Isolaccia, piazza IV Novembre 1</td>
+                            <td>0342985331</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Valdisotto</th>
+                            <td>Cepina, via Roma 55</td>
+                            <td>0342950166</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Valfurva</th>
+                            <td>S. Caterina V., piazza Magliavaca</td>
+                            <td>0342935544</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Sondalo</th>
+                            <td>Sondalo, via Verdi 2/A</td>
+                            <td>0342801816</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Comunità Montana Alta Valtellina</th>
+                            <td>Bormio, via Roma 1</td>
+                            <td>0342912311</td>
+                        </tr>
+
+
+
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--MUNICIPIO-->
+    <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Municipio</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Bormio</th>
+                            <td>via Don Peccedi 1</td>
+                            <td>0342912211</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Valfurva</th>
+                            <td>San Nicolò, piazza Frodaglio 3</td>
+                            <td>0342945702</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Valdidentro</th>
+                            <td>Isolaccia, piazza IV Novembre 5</td>
+                            <td>0342921901</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Valdisotto</th>
+                            <td>Cepina, via E. De Gasperi 1</td>
+                            <td>0342952011</td>
+                        </tr>
+
+
+
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+   
+    <!--OGGETTI SMARRITI-->
+     <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Ufficio Oggetti Smarriti</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Bormio</th>
+                            <td>c/o Vigili Urbani via Don Peccedi 1</td>
+                            <td>0342912214</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+     <!--POSTE-->
+     <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Poste / Telegrafo</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Bormio</th>
+                            <td>via Lungofrodolfo Vanoni</td>
+                            <td>0342901297</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Valfurva</th>
+                            <td>San Nicolò, piazza Frodaglio 1</td>
+                            <td>0342945131</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Valdidentro</th>
+                            <td>Isolaccia, piazza IV Novembre 1</td>
+                            <td>0342985117</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Valdidentro</th>
+                            <td>Semogo, via Cima Piazzi</td>
+                            <td>0342927111</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Valdisotto</th>
+                            <td>Cepina, via Roma 144</td>
+                            <td>0342950071</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+
+     <!--TRASPORTO PUBBLICO-->
+     <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Trasporto Pubblico Gratuito</p>
+
+
+            </div>
+           
+
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <img src="INSERZIONI/BUS.png" class="img-fluid rounded-2" alt="...">
+    </div>
+
+    <div class="container-fluid separa">
+        <img src="INSERZIONI/TAXI.png" class="img-fluid rounded-2" alt="...">
+    </div>
+
+    <!--SERVIZI TRANSFER-->
+    <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Taxi - NCC - Bus</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Bormio Transfer</th>
+                            <td></td>
+                            <td>0342903768</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">TAXI</th>
+                            <td>Bormio, via Milano</td>
+                            <td>0342910163</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">MTBUS Alta Valtellina</th>
+                            <td></td>
+                            <td>www.mtbus.it</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Elma Viaggi</th>
+                            <td>Bormio, via S. Vitale 20</td>
+                            <td>3388522541</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">G&G Noleggi</th>
+                            <td>Bormio, via Roma 129</td>
+                            <td>0342951158</td>
+                        </tr>
+
+
+
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container-fluid separa">
+        <img src="INSERZIONI/GARAGE.png" class="img-fluid rounded-2" alt="...">
+    </div>
+
+
+    <!--NOLEGGIO AUTO-->
+    <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Noleggio Auto</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">HERTZ</th>
+                            <td>c/o Officina Martinelli, via Milano 47</td>
+                            <td>0342910134</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Carrozzeria Sosio</th>
+                            <td>Bormio, via Milano 126</td>
+                            <td>0342901433</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Cola s.r.l.</th>
+                            <td>via Milano 116</td>
+                            <td>0342903056</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Elmarent</th>
+                            <td></td>
+                            <td>3388522541</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Carrozzeria Sosio Ilario</th>
+                            <td>Valdidentro, via Piandelvino 7</td>
+                            <td>0342929576</td>
+                        </tr>
+
+
+
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <!--METEO-->
+    <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Meteo</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Centro Nivometeorologico</th>
+                            
+                            <td>0342914400</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">A.R.P.A. Lombardia</th>
+                            
+                            <td>02696661</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Bollettino Meteonivologico C.F.S.</th>
+                            
+                            <td>www.meteomont.org</td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--LAVANDERIE-->
+    <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Lavanderie</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Lava Più (self service)</th>
+                            <td>Bormio, via Milano 60</td>
+                            <td>3338238110</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Stelvio</th>
+                            <td>Bormio, via Morcelli 20</td>
+                            <td>0342901455</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Bloomest</th>
+                            <td>Valdidentro, via Nazionale 23</td>
+                            <td>3403535798</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Val Viola</th>
+                            <td>Valdidentro, via Capole 24/A</td>
+                            <td>0342985942</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Stella Alpina</th>
+                            <td>Valdidentro, via Nazionale 26</td>
+                            <td>0342921211</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+     <!--FIORISTI-->
+     <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Fioristi</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Fiordelmondo</th>
+                            <td>Bormio, via Al Forte 16</td>
+                            <td>0342910137</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Flora Bormio</th>
+                            <td>Bormio, via SS 38</td>
+                            <td>3388176986</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Mattia</th>
+                            <td>Bormio, via Milano</td>
+                            <td>0342910701</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Lorella</th>
+                            <td>Valdisotto, via Nazionale 13/A</td>
+                            <td>3408388893 0342952011</td>
+                        </tr>
+
+                       
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+     <!--CANI-->
+     <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Servizi per Cani</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">La Bauttega</th>
+                            <td>Bormio, via Santa Barbara 13</td>
+                            <td>0342910591</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">True Love</th>
+                            <td>Bormio, via IV Novembre</td>
+                            <td>3388176986</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Pensione per Cani</th>
+                            <td>Valfurva, Madonna dei Monti</td>
+                            <td>3334654646</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+     <!--GAS E LEGNA-->
+     <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Gas / Legna</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Canclini Fabio / Agip Gas</th>
+                            <td>Bormio, via Monte Cristallo 4</td>
+                            <td>0342901317</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Bertalli Aldo</th>
+                            <td>Bormio, via Milano 89</td>
+                            <td>0342905000</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Officina Bertolina</th>
+                            <td>Valfurva, via Uzza 7/D</td>
+                            <td>0342945713</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Apollonio Raimondo</th>
+                            <td>Semogo, via C. Piazzi 65</td>
+                            <td>0342927083</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Casari Combustibili</th>
+                            <td>Valdisotto, via Nazionale 14</td>
+                            <td>0342950322</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Ecolgas</th>
+                            <td>Valdisotto, via Carpin 6/A</td>
+                            <td>3394478528</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Alimentari d'Auria</th>
+                            <td>Valdisotto, via Centrale 37</td>
+                            <td>0342905315</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Butiga Raineri</th>
+                            <td>Valdisotto, via al Forte 2</td>
+                            <td>0342929155</td>
+                        </tr>
+
+                        
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--INTERNET POINT-->
+    <div class="container-fluid separa">
+
+        <div class="card">
+            <div class="card-header">
+                <p class="fs-2 text-white museo700">Internet Point</p>
+
+
+            </div>
+            <div class="card-body">
+
+
+
+                <table class="table table-striped-columns">
+
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">L'Angolo Informatico</th>
+                            <td>Valdidentro, via Livigno 11</td>
+                            <td>0342052192</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Free WiFi Valdidentro</th>
+                            <td>P.zza IV Novembre, Campo Sportivo Isolaccia e Semogo Polifunzionale Rasin, Ski Stadium Isolaccia</td>
+                            
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
 
    
 
+    
 
 
-   
+
+
+
+
+
+    <!-- FOOTER -->
+
+    <div class="container-fluid footer d-flex justify-content-center align-items-end"
+        style="margin-top: 20px; background-color: #B41C20;">
+
+        <p class="fw-bold text-white museo700" style="margin-top: 15px; font-size: small;">©AlpiService s.a.s. di Confortola Fabrizio &
+            Co.
+        </p>
+
+
+
+
+    </div>
 
 
 

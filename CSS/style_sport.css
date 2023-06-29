@@ -216,4 +216,10 @@ body {
     font-family: "roboto-medium" !important;
   }
 
+  .btn-primary{
+    background-color: #036d91;
+    border: 0pt;
+    font-family: "museo900";
+      }
+
  
